@@ -160,26 +160,41 @@ power(3,3) # => 27
 # Regex
 +++
 ### Ever worked with 
-- Credit cards  
--> ```1111 1111 1111 1111```
-- Emails 
--> ```test1234@gmail.com```
-- Web Sites 
--> ```http://google.com```
-- Social Security number 
--> ```111-11-1111```
+#### Credit cards  
+```
+1111 1111 1111 1111
+```
+#### Emails 
+```
+test1234@gmail.com
+```
+#### Web Sites 
+```
+http://google.com
+```
+#### Social Security number 
+```
+111-11-1111
+```
 +++
 ### Let's break them into patterns
 +++
-### Breakdown
-- Credit cards 
-```4 fields of 4 digits with space in between```
-- Emails 
-```x number of characters + @ symbol + y number of characters + . symbol + z number of characters```
-- Websites 
-```http:// + any number of characters```
-- Social Security Number 
-```3 digits + '-' symbol 2 digits + '-' symbol 4 digits```
+#### Credit cards 
+```
+4 fields of 4 digits with space in between
+```
+#### Emails 
+```
+x number of characters + @ symbol + y number of characters + . symbol + z number of 
+```
+#### Websites 
+```
+http:// + any number of characters
+```
+#### Social Security Number 
+```
+3 digits + '-' symbol 2 digits + '-' symbol 4 digits
+```
 +++
 ### What is Regex?
 - It means Regular Expression
