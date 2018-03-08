@@ -64,48 +64,38 @@ end
 power(3,3) # => 27
 ```
 +++
-Stack 1 => The first time it runs
-```ruby
-  power_recursive(3,3,1)
+```ruby 
+  power_recursive(3,3,1) # Stack 1 -> First time run
 ```
 +++
-Stack 2
 ```ruby
-  power_recursive(3,2,3)
+  power_recursive(3,2,3) # Stack 2
 ```
-Stack 1 
-```ruby
-  power_recursive(3,3,1)
+```ruby 
+  power_recursive(3,3,1) # Stack 1
 ```
 +++
-Stack 3
 ```ruby
-  power_recursive(3,1,9)
+  power_recursive(3,1,9) # Stack 3
 ```
-Stack 2
 ```ruby
-  power_recursive(3,2,3)
+  power_recursive(3,2,3) # Stack 2
 ```
-Stack 1 
 ```ruby
-  power_recursive(3,3,1)
+  power_recursive(3,3,1) # Stack 1
 ```
 +++
-Stack 4 -> The last function to execute
 ```ruby
-  power_recursive(3,0,27)
+  power_recursive(3,0,27) # Stack 4 -> Last function
 ```
-Stack 3
 ```ruby
-  power_recursive(3,1,9)
+  power_recursive(3,1,9) # Stack 3
 ```
-Stack 2
 ```ruby
-  power_recursive(3,2,3)
+  power_recursive(3,2,3) # Stack 2
 ```
-Stack 1 
 ```ruby
-  power_recursive(3,3,1)
+  power_recursive(3,3,1) # Stack 1
 ```
 +++
 ### Stacks run in a LIFO method
@@ -113,18 +103,14 @@ Stack 1
 - The lower stacks are waiting for the upper stack to finish execution
 - Will only continue to execute when upper stack finishes
 +++
-Stack 4 return the value to stack 3, etc...
-Stack 3
 ```ruby
-  power_recursive(3,1,9)
+  power_recursive(3,1,9) # Stack 3 -> Stack 4 returns value to stack  3
 ```
-Stack 2
 ```ruby
-  power_recursive(3,2,3)
+  power_recursive(3,2,3) # Stack 2
 ```
-Stack 1 
 ```ruby
-  power_recursive(3,3,1)
+  power_recursive(3,3,1) # Stack 1
 ```
 +++
 ```ruby
@@ -149,28 +135,23 @@ end
 power(3,3) # => 27
 ```
 +++
-# .
-# .
-# .
-Stack 5 -> Depth 5
+### .
+### .
+### .
 ```ruby
-  power_recursive(3,-1,81)
+  power_recursive(3,-1,81) # Stack 5 -> Depth 5
 ```
-Stack 4 -> Depth 4
 ```ruby
-  power_recursive(3,0,27)
+  power_recursive(3,0,27) # Stack 4 -> Depth 4
 ```
-Stack 3 -> Depth 3
 ```ruby
-  power_recursive(3,1,9)
+  power_recursive(3,1,9) # Stack 3 -> Depth 3
 ```
-Stack 2 -> Depth 2
 ```ruby
-  power_recursive(3,2,3)
+  power_recursive(3,2,3) # Stack 2 -> Depth 2
 ```
-Stack 1 -> Depth 1
 ```ruby
-  power_recursive(3,3,1)
+  power_recursive(3,3,1) # Stack 1 -> Depth 1
 ```
 +++
 ### Your computer can only maintain a certain number of stacks
@@ -179,17 +160,26 @@ Stack 1 -> Depth 1
 # Regex
 +++
 ### Ever worked with 
-- Credit cards  `1111 1111 1111 1111`
-- Emails `test1234@gmail.com`
-- Web Sites `http://google.com`
-- Social Security number `111-11-1111`
+- Credit cards  
+-> ```1111 1111 1111 1111```
+- Emails 
+-> ```test1234@gmail.com```
+- Web Sites 
+-> ```http://google.com```
+- Social Security number 
+-> ```111-11-1111```
 +++
 ### Let's break them into patterns
 +++
-- Credit cards `4 fields of 4 digits with space in between`
-- Emails `x number of characters + @ symbol + y number of characters + . symbol + z number of characters`
-- Websites `http:// + any number of characters`
-- Social Security Number `3 digits + '-' symbol 2 digits + '-' symbol 4 digits`
+### Breakdown
+- Credit cards 
+```4 fields of 4 digits with space in between```
+- Emails 
+```x number of characters + @ symbol + y number of characters + . symbol + z number of characters```
+- Websites 
+```http:// + any number of characters```
+- Social Security Number 
+```3 digits + '-' symbol 2 digits + '-' symbol 4 digits```
 +++
 ### What is Regex?
 - It means Regular Expression
